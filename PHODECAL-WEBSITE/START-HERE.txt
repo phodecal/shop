@@ -1,0 +1,20 @@
+PHỐDECAL WEBSITE - HƯỚNG DẪN MỞ BẰNG VS CODE
+
+1. Giải nén thư mục PHODECAL-WEBSITE.
+2. Mở VS Code > File > Open Folder > chọn thư mục PHODECAL-WEBSITE.
+3. Cài extension Live Server nếu chưa có.
+4. Mở index.html > nhấn chuột phải > Open with Live Server.
+5. Chỉnh giao diện trong css/style.css.
+6. Chỉnh nội dung và danh mục trong index.html.
+7. Chỉnh sản phẩm mẫu trong js/products.js.
+8. Chỉnh hành vi website trong js/app.js.
+
+Đã đổi nhận diện chữ thành PHỐDECAL, chuyển tông màu sang đỏ Racing,
+đồng bộ font Oswald nghiêng cho tiêu đề/nút, icon Font Awesome và menu danh mục.
+
+LƯU Ý:
+- Các hình SVG hiện tại là hình nền minh họa/placeholder. Hãy thay bằng ảnh thi công,
+  xe máy, đèn LED thực tế của cửa hàng để website giống bản demo hơn.
+- Chức năng đăng nhập/tạo tài khoản hiện mới là giao diện demo, chưa có hệ thống tài khoản.
+- Giỏ hàng hiện lưu trên trình duyệt (localStorage), chưa có backend nhận đơn.
+- Các số điện thoại/liên hệ trong cấu hình hiện là giá trị mẫu, cần thay trước khi chạy thật.

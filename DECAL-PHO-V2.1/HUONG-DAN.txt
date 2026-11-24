@@ -1,0 +1,10 @@
+DECAL PHỐ V2.1 — bản vá CSS
+1. Sao lưu website V2.
+2. Chép css/premium-v21.css vào thư mục css của website hiện tại.
+3. Mở index.html, thêm ngay sau dòng <link rel="stylesheet" href="css/style.css">:
+<link rel="stylesheet" href="css/premium-v21.css?v=21">
+4. Lưu, chạy Live Server, Ctrl+F5. Kiểm tra 3 banner, menu, giỏ hàng, desktop/mobile.
+5. Kiểm tra assets/images/banners/vision.webp, sh.webp, wave.webp tồn tại đúng tên. Nếu thiếu, bổ sung ảnh banner thật; không đổi tên ảnh card nếu chưa sao lưu.
+6. Khi hài lòng, tải index.html đã chỉnh và css/premium-v21.css lên đúng thư mục DECAL-PHO-WEBSITE trên GitHub.
+Quay lại V2: xóa dòng link mới trong index.html. Không cần xóa style.css hay JavaScript.
+Font Google cần internet; có font dự phòng. Bản vá chưa kiểm thử trình duyệt. Widget chat bên ngoài chưa được chỉnh vì chưa xác định được mã nhúng.

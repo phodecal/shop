@@ -1,0 +1,7 @@
+DECAL PHỐ - HƯỚNG DẪN
+1. Giải nén toàn bộ ZIP.
+2. VS Code > File > Open Folder > chọn DECAL-PHO-WEBSITE.
+3. Mở index.html bằng Live Server.
+4. Không mở riêng index.html trong Downloads vì CSS/JS/ảnh nằm trong thư mục đi kèm.
+5. Nhấn Ctrl+Shift+R để làm mới.
+6. Google Fonts và Font Awesome cần mạng để tải.

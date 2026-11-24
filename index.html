@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d"><meta name="description" content="Dán decal xe máy, độ đèn Demi LED, LED Audi và phụ kiện xe máy.">
+  <title>DECAL PHỐ | Dán decal & Độ đèn LED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="announcement"><span>DECAL PHỐ • TRANG TRÍ XE</span><span>DÁN DECAL • ĐỘ ĐÈN LED • NÂNG TẦM PHONG CÁCH</span></div>
+  <header class="site-header">
+    <button class="icon-btn mobile-only" id="menuBtn" aria-label="Mở menu"><i class="fa-solid fa-bars"></i></button>
+    <button class="icon-btn desktop-search" id="searchToggle" aria-label="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <a class="brand" href="#home" aria-label="DECAL PHỐ trang chủ"><span>DECAL</span><b> PHỐ</b><small>TRANG TRÍ XE</small></a>
+    <nav class="main-nav" id="mainNav" aria-label="Danh mục và điều hướng" aria-hidden="true">
+      <div class="sidebar-brand mobile-only">
+        <span>DECAL</span><b> PHỐ</b>
+        <button class="close-btn" id="menuCloseBtn" aria-label="Đóng menu"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="menu-cat-header mobile-only">
+        <span class="cat-icon"><i class="fa-solid fa-grip"></i></span> DANH MỤC <button class="cat-close" aria-label="Đóng danh mục"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <a href="#home">Trang chủ</a>
+      <a href="#services">Dịch vụ</a>
+      <a href="#products">Sản phẩm</a>
+      <a href="#gallery">Thư viện xe</a>
+      <a href="#videos">Video</a>
+      <a href="#contact">Liên hệ</a>
+      <div class="sidebar-divider mobile-only"></div>
+      <a href="#decals" class="mobile-cat-link"><i class="fa-solid fa-shield-halved"></i><span>Dán PPF</span><i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#decals" class="mobile-cat-link"><i class="fa-solid fa-motorcycle"></i><span>Tem Xe Máy</span><i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#decals" class="mobile-cat-link"><i class="fa-solid fa-motorcycle"></i><span>Tem Mô Tô</span><i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#decals" class="mobile-cat-link"><i class="fa-solid fa-car-side"></i><span>Tem Ô Tô</span><i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#products" class="mobile-cat-link"><i class="fa-solid fa-star"></i><span>Sản Phẩm Khác</span><i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#led" class="mobile-cat-link"><i class="fa-solid fa-lightbulb"></i><span>Đèn Xe</span><i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#decals" class="mobile-cat-link"><i class="fa-solid fa-palette"></i><span>Dán Đổi Màu</span><i class="fa-solid fa-chevron-right"></i></a>
+      <a href="#services" class="mobile-cat-link"><i class="fa-solid fa-screwdriver-wrench"></i><span>Dịch Vụ</span><i class="fa-solid fa-chevron-right"></i></a>
+      <div class="sidebar-divider mobile-only"></div>
+      <a href="#" class="mobile-cat-link" id="sidebarAccountBtn"><i class="fa-regular fa-user"></i><span>Đăng Nhập</span></a>
+      <a href="#" class="mobile-cat-link" id="sidebarRegisterBtn"><i class="fa-solid fa-user-plus"></i><span>Tạo Tài Khoản</span></a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="icon-btn account-btn" id="accountBtn" aria-label="Tài khoản"><i class="fa-regular fa-user"></i></button>
+      <button class="icon-btn cart-head" id="headerCart" aria-label="Giỏ hàng"><i class="fa-solid fa-bag-shopping"></i><i class="cart-count">0</i></button>
+    </div>
+  </header>
+  
+  <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+  <div class="search-panel" id="searchPanel">
+    <input id="searchInput" type="search" placeholder="Tìm decal, Demi LED, LED Audi...">
+    <button id="searchClose">Đóng</button>
+  </div>
+
+  <main id="home">
+    <div class="layout-with-sidebar wrap">
+      <!-- SIDEBAR DANH MỤC CỐ ĐỊNH TRÊN DESKTOP -->
+      <aside class="desktop-sidebar-cat">
+        <div class="cat-title-box"><span><i class="fa-solid fa-grip"></i></span> DANH MỤC</div>
+        <ul class="cat-menu-list">
+          <li><a href="#decals"><i class="fa-solid fa-shield-halved"></i> Dán PPF <i>›</i></a></li>
+          <li><a href="#decals"><i class="fa-solid fa-motorcycle"></i> Tem Xe Máy <i>›</i></a></li>
+          <li><a href="#decals"><i class="fa-solid fa-bicycle"></i> Tem Mô Tô <i>›</i></a></li>
+          <li><a href="#decals"><i class="fa-solid fa-car"></i> Tem Ô Tô <i>›</i></a></li>
+          <li><a href="#products"><i class="fa-solid fa-star"></i> Sản Phẩm Khác <i>›</i></a></li>
+          <li><a href="#led"><i class="fa-solid fa-lightbulb"></i> Đèn Xe <i>›</i></a></li>
+          <li><a href="#decals"><i class="fa-solid fa-palette"></i> Dán Đổi Màu <i>›</i></a></li>
+          <li><a href="#services"><i class="fa-solid fa-screwdriver-wrench"></i> Dịch Vụ <i>›</i></a></li>
+          <li><a href="#" id="desktopLoginLink"><i class="fa-solid fa-user"></i> Đăng Nhập</a></li>
+          <li><a href="#" id="desktopRegisterLink"><i class="fa-solid fa-user-plus"></i> Tạo Tài Khoản</a></li>
+        </ul>
+      </aside>
+
+      <div class="main-content-area">
+        <section class="hero" aria-label="Banner nổi bật">
+          <div class="hero-slides" id="heroSlides">
+            <article class="hero-slide active" style="--hero-image:url('assets/images/banners/vision.webp')"><div class="hero-copy"><p class="eyebrow">CHUYÊN DÁN TEM VÀ ĐỘ XE</p><h1>NÂNG TẦM<br><em>PHONG CÁCH.</em></h1><p>DÁN DECAL <b>•</b> ĐỘ ĐÈN LED</p><a class="btn-red" href="#services">KHÁM PHÁ NGAY <span>›</span></a></div><div class="hero-visual"><div class="bike-glow">PHỐ<span>ĐỘ XE</span></div></div></article>
+            <article class="hero-slide" style="--hero-image:url('assets/images/banners/sh.webp')"><div class="hero-copy"><p class="eyebrow">TEM XE • PHỐI MÀU • CÁ TÍNH</p><h1>ĐỔI DIỆN MẠO<br><em>XẾ YÊU.</em></h1><p>TEM TRÙM • TEM RỜI • ĐỔI MÀU</p><a class="btn-red" href="#decals">XEM MẪU DECAL <span>›</span></a></div><div class="hero-visual"><div class="bike-glow">TEM<span>THIẾT KẾ</span></div></div></article>
+            <article class="hero-slide" style="--hero-image:url('assets/images/banners/wave.webp')"><div class="hero-copy"><p class="eyebrow">NÂNG CẤP ÁNH SÁNG</p><h1>ÁNH SÁNG<br><em>KHÁC BIỆT.</em></h1><p>DEMI LED • LED AUDI • LED RGB</p><a class="btn-red" href="#led">KHÁM PHÁ ĐỘ LED <span>›</span></a></div><div class="hero-visual"><div class="bike-glow">ĐÈN<span>ĐỘ XE</span></div></div></article>
+          </div>
+          <button class="slide-arrow prev" id="slidePrev" aria-label="Banner trước">‹</button><button class="slide-arrow next" id="slideNext" aria-label="Banner tiếp">›</button><div class="slide-dots" id="slideDots"><button class="active" aria-label="Banner 1"></button><button aria-label="Banner 2"></button><button aria-label="Banner 3"></button></div>
+        </section>
+
+        <section class="vehicle-section" aria-label="Chọn dòng xe"><h2>CHỌN DÒNG XE <em>CỦA BẠN</em></h2><div class="vehicle-grid"><button class="vehicle-card" data-vehicle="vision" aria-pressed="false"><img src="assets/images/banners/vision-card.webp" alt="Minh họa Honda VISION" loading="lazy"><strong>VISION</strong></button><button class="vehicle-card" data-vehicle="sh" aria-pressed="false"><img src="assets/images/banners/sh-card.webp" alt="Minh họa Honda SH" loading="lazy"><strong>SH</strong></button><button class="vehicle-card" data-vehicle="wave" aria-pressed="false"><img src="assets/images/banners/wave-card.webp" alt="Minh họa Honda WAVE" loading="lazy"><strong>WAVE</strong></button></div><p class="vehicle-note" id="vehicleNote">Ảnh minh họa phong cách. Chọn xe để xem nhóm dịch vụ gợi ý.</p><div id="vehicleLinks" hidden><a href="#decals">Xem dịch vụ decal ›</a><a href="#led">Xem dịch vụ đèn LED ›</a></div></section>
+        <section class="quick-grid" id="services">
+          <a class="quick-card decal-card" href="#decals"><span class="quick-icon"><i class="fa-solid fa-layer-group"></i></span><div><h3>DÁN DECAL</h3><p>Tem trùm · Tem rời · Đổi màu</p></div><b>›</b></a>
+          <a class="quick-card led-card" href="#led"><span class="quick-icon"><i class="fa-solid fa-bolt"></i></span><div><h3>ĐỘ ĐÈN LED</h3><p>Demi LED · LED Audi · LED RGB</p></div><b>›</b></a>
+          <a class="quick-card gallery-card" href="#gallery"><span class="quick-icon"><i class="fa-regular fa-images"></i></span><div><h3>THƯ VIỆN XE</h3><p>Các mẫu xe đã thi công</p></div><b>›</b></a>
+          <a class="quick-card video-card" href="#videos"><span class="quick-icon"><i class="fa-solid fa-circle-play"></i></span><div><h3>VIDEO THI CÔNG</h3><p>Quy trình & sản phẩm thực tế</p></div><b>›</b></a>
+        </section>
+      </div>
+    </div>
+
+    <section class="section wrap" id="products">
+      <div class="section-heading"><div><p class="eyebrow">DECAL PHỐ ĐỀ XUẤT</p><h2>SẢN PHẨM <em>NỔI BẬT</em></h2></div><a href="#products" class="text-link">XEM TẤT CẢ <b>↗</b></a></div>
+      <div class="filter-row"><button class="filter active" data-filter="all">Tất cả</button><button class="filter" data-filter="led">Đèn LED</button><button class="filter" data-filter="decal">Decal</button><button class="filter" data-filter="accessory">Phụ kiện</button></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="split-feature wrap-box" id="decals"><div class="feature-image decal-feature"><span>01 / DÁN TEM XE</span></div><div class="feature-copy"><p class="eyebrow">THỂ HIỆN PHONG CÁCH RIÊNG</p><h2>DÁN DECAL<br><em>ĐẬM CHẤT RIÊNG.</em></h2><p>Khám phá phong cách tem trùm, tem rời và phối màu dành riêng cho chiếc xe của bạn.</p><a class="btn-outline" href="#gallery">XEM THƯ VIỆN MẪU <b>↗</b></a></div></section>
+    
+    <section class="split-feature reverse wrap-box" id="led"><div class="feature-image led-feature"><span>02 / ĐỘ ĐÈN XE</span></div><div class="feature-copy"><p class="eyebrow">NỔI BẬT TRÊN MỌI CUNG ĐƯỜNG</p><h2>ĐỘ ĐÈN LED<br><em>CHẤT TỪ ÁNH NHÌN.</em></h2><p>Demi LED, LED Audi, LED mí mắt và các giải pháp ánh sáng theo phong cách riêng.</p><a class="btn-outline" href="#products">KHÁM PHÁ SẢN PHẨM <b>↗</b></a></div></section>
+    
+    <section class="section wrap" id="gallery"><div class="section-heading"><div><p class="eyebrow">CÁC MẪU XE ĐÃ THỰC HIỆN</p><h2>THƯ VIỆN <em>XE ĐỘ</em></h2></div><p class="muted">Ảnh công trình thực tế sẽ được cập nhật.</p></div><div class="gallery-grid" id="galleryGrid"></div></section>
+    
+    <section class="section video-section" id="videos"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">QUY TRÌNH THI CÔNG</p><h2>VIDEO <em>THI CÔNG</em></h2></div><p class="muted">Video thực tế sẽ được cập nhật.</p></div><div class="video-grid"><button class="video-tile" data-video="assets/videos/decal-demo.mp4"><span class="play">▶</span><b>QUY TRÌNH DÁN DECAL</b></button><button class="video-tile second" data-video="assets/videos/led-demo.mp4"><span class="play">▶</span><b>THI CÔNG DEMI LED</b></button></div></div></section>
+    
+    <section class="contact-band" id="contact"><div><p class="eyebrow">NÂNG TẦM PHONG CÁCH</p><h2>SẴN SÀNG LÀM MỚI <em>XẾ YÊU?</em></h2><p>Liên hệ để được tư vấn dịch vụ và báo giá.</p></div><a class="btn-red" href="#contact" id="contactCall">LIÊN HỆ NGAY ↗</a></section>
+  </main>
+  
+  <footer class="footer"><a class="brand" href="#home"><span>DECAL</span><b> PHỐ</b><small>TRANG TRÍ XE</small></a><p>DÁN DECAL • ĐỘ ĐÈN LED • PHỤ KIỆN XE MÁY</p><small>© <span id="year"></span> DECAL PHỐ. Bảo lưu mọi quyền.</small></footer>
+  
+  <nav class="bottom-nav" aria-label="Điều hướng nhanh">
+    <a href="#contact" id="bottomCall"><span><i class="fa-solid fa-phone"></i></span><b>GỌI NGAY</b></a>
+    <a href="#contact" id="bottomMessage"><span><i class="fa-regular fa-comment-dots"></i></span><b>NHẮN TIN</b></a>
+    <a href="#products"><span><i class="fa-solid fa-grip"></i></span><b>SẢN PHẨM</b></a>
+    <a href="#home"><span><i class="fa-solid fa-store"></i></span><b>CỬA HÀNG</b></a>
+    <button id="bottomCart"><span><i class="fa-solid fa-cart-shopping"></i><i class="cart-count">0</i></span><b>GIỎ HÀNG</b></button>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+  
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-head"><h2>GIỎ HÀNG <em>(<span id="cartTotalCount">0</span>)</em></h2><button class="close-btn" id="cartClose">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer"><div class="total-line"><span>Tạm tính</span><b id="cartSubtotal">0₫</b></div><button class="btn-red full" id="checkoutBtn">GỬI YÊU CẦU ĐẶT HÀNG</button><small>Đơn hàng demo sẽ được tổng hợp để bạn gửi qua Zalo sau khi cấu hình số liên hệ.</small></div>
+  </aside>
+
+  <div class="modal" id="accountModal"><button class="close-btn" data-close>×</button><h2>TÀI KHOẢN</h2><p>Chức năng đăng nhập có thể tích hợp ở giai đoạn tiếp theo.</p><button class="btn-red full" data-close>ĐÃ HIỂU</button></div>
+  <div class="modal video-modal" id="videoModal"><button class="close-btn" data-close>×</button><video id="videoPlayer" controls playsinline></video><p id="videoMessage">Video đang được cập nhật.</p></div>
+  <div class="modal checkout-modal" id="checkoutModal"><button class="close-btn" data-close>×</button><h2>THÔNG TIN LIÊN HỆ</h2><form id="checkoutForm"><label>Họ và tên<input name="name" required placeholder="Tên của bạn"></label><label>Số điện thoại<input name="phone" required inputmode="tel" placeholder="Số điện thoại"></label><label>Dòng xe / Ghi chú<textarea name="note" placeholder="Ví dụ: Winner X, muốn độ Demi LED..."></textarea></label><button class="btn-red full" type="submit">TẠO NỘI DUNG ĐẶT HÀNG</button></form><p class="form-note" id="checkoutResult"></p></div>
+  
+  <script src="js/products.js"></script><script src="js/app.js"></script>
+</body>
+</html>

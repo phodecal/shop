@@ -1,0 +1,7 @@
+DECAL PHỐ V2
+Mở thư mục này trong VS Code, chạy index.html bằng Live Server.
+Ảnh banner WebP là ảnh minh họa AI có sẵn, không phải công trình thật.
+Ảnh sản phẩm và thư viện SVG vẫn cần thay bằng ảnh thật. Giá sản phẩm là dữ liệu mẫu.
+Sửa thông tin liên hệ trong js/app.js (SITE_CONFIG). Video MP4 đặt vào assets/videos theo tên trong index.html.
+Chọn dòng xe hiện gợi ý dịch vụ, chưa lọc sản phẩm theo đời xe vì chưa có dữ liệu tương thích.
+Kiểm tra mobile, giỏ hàng, tìm kiếm trước khi thay thư mục trên GitHub.

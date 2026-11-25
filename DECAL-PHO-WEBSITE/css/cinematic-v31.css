@@ -1,0 +1,18 @@
+/* V3.1 — load after signature-v3.css */
+body{background:#090a0d;background-image:radial-gradient(ellipse at 85% 8%,#52202a66,transparent 38%),radial-gradient(ellipse at 8% 30%,#39434e55,transparent 42%),linear-gradient(145deg,#090a0d,#17191e 45%,#090a0d);background-size:100% 100%}
+.hero{isolation:isolate;box-shadow:0 24px 55px #0009,0 1px 0 #ffffff20}
+.hero-slide{background-position:var(--cinematic-x,50%) center}
+.hero h1{font-family:'Be Vietnam Pro',Arial,sans-serif;font-style:normal;font-weight:800;line-height:1.12;letter-spacing:-.045em;font-size:clamp(30px,3.6vw,58px)}
+.hero h1 em{font-style:normal}.hero .eyebrow{letter-spacing:1.7px}.hero-copy>p:not(.eyebrow){font-weight:400}
+.vehicle-section h2,.section-heading h2{font-weight:600;letter-spacing:-.025em}
+.quick-card,.product-card,.vehicle-card{background:linear-gradient(145deg,#282b32,#17191e 55%,#111216);border-color:#ffffff12;box-shadow:0 12px 30px #0006,inset 0 1px #ffffff12}
+.quick-card h3{font-weight:600}.quick-card p,.vehicle-note{color:#c1c3cb}.desktop-sidebar-cat{border-color:#ffffff15;box-shadow:0 18px 35px #0006}
+@media(max-width:900px){
+.hero{height:calc(clamp(180px,55vw,340px) + 235px);background:#101115;border:1px solid #ffffff18;border-radius:14px}
+.hero-slide{display:flex;align-items:flex-end;padding:0 16px 62px;background-image:linear-gradient(0deg,#101115 0%,#101115 52%,#10111500 65%),var(--hero-image);background-size:100% 100%,100% auto;background-position:center,center top;background-repeat:no-repeat;background-color:#101115}
+.hero-copy{width:100%;max-width:100%;text-shadow:none}.hero h1{font-size:clamp(25px,6.6vw,38px);margin:0 0 8px}.hero .eyebrow{margin:0 0 7px;font-size:10px;letter-spacing:1px}.hero-copy>p:not(.eyebrow){font-size:12px;margin:8px 0}.hero .btn-red{margin-top:4px}.signature-ambient{display:none}
+.bottom-nav{height:calc(68px + env(safe-area-inset-bottom));background:#15171bed;color:#d8dae0;border-top:1px solid #ffffff20;box-shadow:0 -10px 30px #0008;backdrop-filter:blur(14px);padding-bottom:env(safe-area-inset-bottom)}
+.bottom-nav a,.bottom-nav button{background:transparent;color:#d8dae0;gap:5px;min-width:0}.bottom-nav a:not(:last-child):after,.bottom-nav button:before{display:none}.bottom-nav b{font:500 9px 'Be Vietnam Pro',Arial,sans-serif;letter-spacing:0}.bottom-nav span{font-size:19px}.bottom-nav .cinematic-active{color:#ff5266;background:#e51d3512}.bottom-nav .cinematic-active:after{content:'';display:block;position:absolute;bottom:5px;left:40%;width:20%;height:2px;background:#ff5266;border-radius:3px}
+body{padding-bottom:calc(78px + env(safe-area-inset-bottom))}.quick-card{padding:12px 9px;gap:8px}.quick-card h3{font-size:13px}.quick-card p{font-size:11px}.vehicle-card strong{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.hero-slide{background-position:center}.signature-enter,.signature-ambient{animation:none!important}}

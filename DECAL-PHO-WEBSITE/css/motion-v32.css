@@ -1,0 +1,23 @@
+/* DECAL PHO V3.2 — load last, after working V3.1.2 */
+body{background-image:radial-gradient(ellipse at 88% 12%,#64233344,transparent 36%),radial-gradient(ellipse at 12% 45%,#34404c44,transparent 42%),linear-gradient(145deg,#090a0d,#17191e 48%,#090a0d)}
+.hero{box-shadow:0 20px 48px #0008,0 1px 0 #ffffff12}
+.hero-slide{transition:opacity .65s ease,visibility .65s}
+.hero-slide.active .hero-copy>*{animation:motion-copy .55s both cubic-bezier(.2,.7,.2,1)}
+.hero-slide.active .hero-copy>*:nth-child(2){animation-delay:.08s}.hero-slide.active .hero-copy>*:nth-child(3){animation-delay:.16s}.hero-slide.active .hero-copy>*:nth-child(4){animation-delay:.24s}
+@keyframes motion-copy{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.vehicle-card,.quick-card,.product-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.vehicle-card img{transition:scale .45s ease;transform-origin:center}
+@media(hover:hover) and (pointer:fine){.vehicle-card:hover,.quick-card:hover,.product-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px #0008;border-color:#ed354955}.vehicle-card:hover img{scale:1.025}}
+.btn-red:active,.btn-outline:active,.vehicle-card:active,.quick-card:active{transform:scale(.98)}
+.motion-arrived{animation:motion-copy .5s both ease-out}
+@media(max-width:900px){
+.hero{--photo-height:clamp(150px,43vw,270px);height:calc(var(--photo-height) + 225px)!important}
+.hero-slide{padding:0 16px 54px!important}
+.hero-slide::before{height:var(--photo-height);background-position:right center}
+.hero-slide::after{top:calc(var(--photo-height) - 28px);height:28px}
+.hero h1{font-size:clamp(25px,6.4vw,35px);margin-bottom:6px}
+.hero-copy>p:not(.eyebrow){margin:6px 0}
+.bottom-nav .cinematic-active{background:radial-gradient(ellipse at 50% 70%,#e51d3526,transparent 75%)}
+.bottom-nav .cinematic-active:after{width:16%;left:42%;height:2px}
+}
+@media(prefers-reduced-motion:reduce){.hero-slide,.vehicle-card,.quick-card,.product-card,.vehicle-card img{transition:none!important}.hero-slide.active .hero-copy>*,.motion-arrived{animation:none!important}}

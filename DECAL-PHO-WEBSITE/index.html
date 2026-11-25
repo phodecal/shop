@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="css/cinematic-v31.css?v=312">
   <link rel="stylesheet" href="css/motion-v32.css?v=32">
   <link rel="stylesheet" href="css/product-v33.css?v=33">
-  <link rel="stylesheet" href="css/product-v33.css?v=33">
   <link rel="stylesheet" href="css/stability-v331.css?v=331">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>.contact-direct-links{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.contact-direct-links a{white-space:nowrap}@media(max-width:900px){.contact-direct-links{justify-content:center;width:100%}}</style>
 </head>
 <body>
   <div class="announcement"><span>DECAL PHỐ • TRANG TRÍ XE</span><span>DÁN DECAL • ĐỘ ĐÈN LED • NÂNG TẦM PHONG CÁCH</span></div>
@@ -116,14 +116,14 @@
     
     <section class="section video-section" id="videos"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">QUY TRÌNH THI CÔNG</p><h2>VIDEO <em>THI CÔNG</em></h2></div><p class="muted">Video thực tế sẽ được cập nhật.</p></div><div class="video-grid"><button class="video-tile" data-video="assets/videos/decal-demo.mp4"><span class="play">▶</span><b>QUY TRÌNH DÁN DECAL</b></button><button class="video-tile second" data-video="assets/videos/led-demo.mp4"><span class="play">▶</span><b>THI CÔNG DEMI LED</b></button></div></div></section>
     
-    <section class="contact-band" id="contact"><div><p class="eyebrow">NÂNG TẦM PHONG CÁCH</p><h2>SẴN SÀNG LÀM MỚI <em>XẾ YÊU?</em></h2><p>Liên hệ để được tư vấn dịch vụ và báo giá.</p></div><a class="btn-red" href="#contact" id="contactCall">LIÊN HỆ NGAY ↗</a></section>
+    <section class="contact-band" id="contact"><div><p class="eyebrow">NÂNG TẦM PHONG CÁCH</p><h2>SẴN SÀNG LÀM MỚI <em>XẾ YÊU?</em></h2><p>Liên hệ để được tư vấn dịch vụ và báo giá.</p></div><a class="btn-red" href="tel:0985500095" id="contactCall">GỌI NGAY · 0985 500 095</a><div class="contact-direct-links"><a class="btn-outline" href="https://zalo.me/0985500095" target="_blank" rel="noopener noreferrer">NHẮN ZALO</a><a class="btn-outline" href="https://m.me/103209069168975" target="_blank" rel="noopener noreferrer">MESSENGER</a></div></section>
   </main>
   
   <footer class="footer"><a class="brand" href="#home"><span>DECAL</span><b> PHỐ</b><small>TRANG TRÍ XE</small></a><p>DÁN DECAL • ĐỘ ĐÈN LED • PHỤ KIỆN XE MÁY</p><small>© <span id="year"></span> DECAL PHỐ. Bảo lưu mọi quyền.</small></footer>
   
   <nav class="bottom-nav" aria-label="Điều hướng nhanh">
-    <a href="#contact" id="bottomCall"><span><i class="fa-solid fa-phone"></i></span><b>GỌI NGAY</b></a>
-    <a href="#contact" id="bottomMessage"><span><i class="fa-regular fa-comment-dots"></i></span><b>NHẮN TIN</b></a>
+    <a href="tel:0985500095" id="bottomCall"><span><i class="fa-solid fa-phone"></i></span><b>GỌI NGAY</b></a>
+    <a href="https://zalo.me/0985500095" id="bottomMessage"><span><i class="fa-regular fa-comment-dots"></i></span><b>NHẮN TIN</b></a>
     <a href="#products"><span><i class="fa-solid fa-grip"></i></span><b>SẢN PHẨM</b></a>
     <a href="#home"><span><i class="fa-solid fa-store"></i></span><b>CỬA HÀNG</b></a>
     <button id="bottomCart"><span><i class="fa-solid fa-cart-shopping"></i><i class="cart-count">0</i></span><b>GIỎ HÀNG</b></button>
@@ -149,8 +149,21 @@
   <script src="js/cinematic-v31.js?v=31"></script>
   <script src="js/motion-v32.js?v=32"></script>
   <script src="js/product-v33.js?v=33"></script>
-  <script src="js/product-v33.js?v=33"></script>
-  <script src="js/contact-v331.js?v=331"></script>
-  <script src="js/stability-v331.js?v=331"></script>
+  <script src="js/contact-v331.js?v=332"></script>
+  <script src="js/stability-v331.js?v=332"></script>
+<script>
+(() => {
+ const fix = () => {
+  const contact = document.getElementById('contact');
+  if (!contact) return;
+  contact.querySelectorAll('p').forEach(p => { if (p.textContent.trim().startsWith('Thông tin liên hệ đang được cập nhật')) p.remove(); });
+  for (const [id, url] of [['contactCall','tel:0985500095'],['bottomCall','tel:0985500095'],['bottomMessage','https://zalo.me/0985500095']]) {
+   const a = document.getElementById(id); if (!a) continue;
+   a.href = url; a.onclick = null;
+  }
+ };
+ fix(); window.addEventListener('load', fix, {once:true});
+})();
+</script>
 </body>
 </html>

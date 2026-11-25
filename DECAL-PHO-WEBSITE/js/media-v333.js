@@ -1,0 +1,1 @@
+(()=>{const data=window.SHOWROOM_DATA;if(!data)return;const slugs=['demi','audi','wrap','racing','rgb','accessory'];slugs.forEach((s,i)=>{if(i===5)return;const p=data[i+1]||(data[i+1]={});if(!p.images?.length){p.images=[1,2].map(n=>`assets/images/products/v333/${s}-${n}.webp`);p.illustrative=true;}});})();

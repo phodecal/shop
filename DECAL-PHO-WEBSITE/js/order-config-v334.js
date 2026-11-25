@@ -1,1 +1,1 @@
-window.DECAL_ORDER_ENDPOINT = ''; // Dán URL HTTPS Worker sau khi deploy
+window.DECAL_ORDER_ENDPOINT = 'https://decal-pho-order.coideucang95.workers.dev';

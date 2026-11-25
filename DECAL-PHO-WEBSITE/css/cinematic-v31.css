@@ -16,3 +16,39 @@ body{background:#090a0d;background-image:radial-gradient(ellipse at 85% 8%,#5220
 body{padding-bottom:calc(78px + env(safe-area-inset-bottom))}.quick-card{padding:12px 9px;gap:8px}.quick-card h3{font-size:13px}.quick-card p{font-size:11px}.vehicle-card strong{font-size:14px}
 }
 @media(prefers-reduced-motion:reduce){.hero-slide{background-position:center}.signature-enter,.signature-ambient{animation:none!important}}
+/* V3.1.1 - FIX MOBILE BANNER */
+@media (max-width: 900px) {
+  .hero {
+    height: calc(clamp(180px, 48vw, 300px) + 240px);
+    background: #101115;
+  }
+
+  .hero-slide {
+    background-image:
+      linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 32%,
+        #101115 55%,
+        #101115 100%
+      ),
+      var(--hero-image) !important;
+
+    background-size: 100% 100%, 100% auto !important;
+    background-position: center, center top !important;
+    background-repeat: no-repeat !important;
+    align-items: flex-end;
+    padding: 16px 16px 62px;
+  }
+
+  .hero-copy {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(26px, 6.6vw, 36px);
+    line-height: 1.15;
+  }
+}

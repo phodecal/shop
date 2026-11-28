@@ -1,0 +1,290 @@
+
+/* DECAL PHO V3.6.2
+   BLACK & WHITE PREMIUM */
+
+:root {
+  --lux-bg: #f5f5f5;
+  --lux-card: #ffffff;
+  --lux-text: #25282c;
+  --lux-muted: #666b72;
+  --lux-border: #e5e5e5;
+  --lux-red: #ba3943;
+}
+
+/* Nền tổng thể */
+
+html,
+html body {
+  background: var(--lux-bg) !important;
+  color: var(--lux-text) !important;
+}
+
+body::before,
+body::after {
+  background: none !important;
+}
+
+/* Thanh thông báo */
+
+.announcement {
+  background: #25282c !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Header */
+
+.site-header,
+.main-nav,
+.bottom-nav {
+  background: #ffffff !important;
+  color: var(--lux-text) !important;
+  border-color: var(--lux-border) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,.04) !important;
+}
+
+.site-header a,
+.main-nav a,
+.bottom-nav a,
+.bottom-nav button,
+.icon-btn {
+  color: var(--lux-text) !important;
+}
+
+.brand span {
+  color: var(--lux-red) !important;
+}
+
+.brand b,
+.brand small {
+  color: var(--lux-text) !important;
+}
+
+/* Sidebar danh mục */
+
+.desktop-sidebar-cat {
+  background: #ffffff !important;
+  border: 1px solid var(--lux-border) !important;
+  box-shadow: none !important;
+}
+
+.cat-title-box {
+  background: #25282c !important;
+  color: #ffffff !important;
+}
+
+.cat-menu-list li,
+.cat-menu-list a {
+  background: transparent !important;
+  color: var(--lux-text) !important;
+  border-color: var(--lux-border) !important;
+}
+
+.cat-menu-list a:hover {
+  background: #f0f0f0 !important;
+}
+
+.cat-menu-list i,
+.mobile-cat-link i {
+  color: var(--lux-red) !important;
+}
+
+/* Thẻ sản phẩm và dịch vụ */
+
+.product-card,
+.vehicle-card,
+.quick-card,
+.split-feature,
+.dp36-panel,
+.dp36-card,
+.cart-drawer,
+.modal,
+.search-panel {
+  background: #ffffff !important;
+  color: var(--lux-text) !important;
+  border: 1px solid var(--lux-border) !important;
+  box-shadow: 0 3px 16px rgba(0,0,0,.035) !important;
+}
+
+.product-card:hover,
+.vehicle-card:hover,
+.quick-card:hover {
+  border-color: #c5c5c5 !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,.07) !important;
+}
+
+/* Tiêu đề và nội dung */
+
+h1, h2, h3, h4,
+.product-card strong,
+.vehicle-card strong,
+.dp36-card strong,
+.dp36-faq summary {
+  color: var(--lux-text) !important;
+  text-shadow: none !important;
+}
+
+h1 em,
+h2 em,
+h3 em,
+.eyebrow,
+.dp36-tag,
+#decalServiceV36 em {
+  color: var(--lux-red) !important;
+  text-shadow: none !important;
+}
+
+p,
+.muted,
+.vehicle-note,
+#decalServiceV36 p {
+  color: var(--lux-muted) !important;
+}
+
+/* Giữ chữ sáng trên banner ảnh tối cũ */
+
+.hero-copy h1,
+.hero-copy p,
+.hero-copy strong {
+  color: #ffffff !important;
+}
+
+.hero-copy h1 em,
+.hero-copy .eyebrow {
+  color: #e16b73 !important;
+}
+
+.hero {
+  box-shadow: none !important;
+  border-color: var(--lux-border) !important;
+}
+
+/* Nút bấm */
+
+.btn-red,
+.dp36-links a,
+.filter.active {
+  background: var(--lux-red) !important;
+  color: #ffffff !important;
+  border-color: var(--lux-red) !important;
+  box-shadow: none !important;
+}
+
+.btn-red:hover,
+.dp36-links a:hover {
+  background: #a02e38 !important;
+}
+
+.btn-outline,
+.filter,
+.dp36-jump a {
+  background: #ffffff !important;
+  color: var(--lux-text) !important;
+  border: 1px solid #d5d5d5 !important;
+}
+
+/* Bảng giá và bảng so sánh */
+
+#decalServiceV36 {
+  color: var(--lux-text) !important;
+}
+
+.dp36-table th {
+  background: #25282c !important;
+  color: #ffffff !important;
+}
+
+.dp36-table td {
+  color: var(--lux-text) !important;
+  border-color: var(--lux-border) !important;
+}
+
+.dp36-table tr:nth-child(even) {
+  background: #f3f3f3 !important;
+}
+
+.dp36-table tr:nth-child(odd) {
+  background: #ffffff !important;
+}
+
+.dp36-faq {
+  border-color: var(--lux-border) !important;
+}
+
+.dp36-faq[open] summary {
+  color: var(--lux-red) !important;
+}
+
+/* Form nhập liệu */
+
+input,
+select,
+textarea {
+  background: #fafafa !important;
+  color: var(--lux-text) !important;
+  border: 1px solid #d6d6d6 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8a8a8a !important;
+}
+
+label,
+.drawer-head,
+.total-line,
+.form-note,
+.close-btn {
+  color: var(--lux-text) !important;
+}
+
+/* Hình ảnh */
+
+.vehicle-card img,
+.product-card img,
+.gallery-grid img {
+  filter: saturate(.88) !important;
+}
+
+/* Footer và liên hệ */
+
+.contact-band,
+.footer {
+  background: #ffffff !important;
+  color: var(--lux-text) !important;
+  border-color: var(--lux-border) !important;
+  box-shadow: none !important;
+}
+
+/* Thanh cuộn */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bcbcbc;
+  border-radius: 10px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .site-header,
+  .main-nav,
+  .bottom-nav {
+    background: #ffffff !important;
+  }
+
+  .product-card,
+  .vehicle-card,
+  .quick-card,
+  .dp36-panel {
+    border-radius: 12px;
+  }
+}

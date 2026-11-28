@@ -68,7 +68,7 @@ window.DECAL_DATA = {
 
   prices: [
     { bike: "Wave / Sirius", basic: null, premium: null, ppf: null },
-    { bike: "Honda Vision", basic: null, premium: null, ppf: null },
+    { bike: "Honda Vision", basic: 350000, premium: 650000, ppf: 1200000 },
     { bike: "Honda Lead", basic: null, premium: null, ppf: null },
     { bike: "Honda Air Blade", basic: null, premium: null, ppf: null },
     { bike: "Honda SH Mode", basic: null, premium: null, ppf: null },
